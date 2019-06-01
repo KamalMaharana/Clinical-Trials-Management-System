@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Search Result</title>
+  
+  
+  
+      <link rel="stylesheet" href="../static/css/Datatable.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th>Rank</th>
+                <th>Disease</th>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Conditions</th>
+                <th>Interventions</th>
+                <th>Locations</th>
+			</tr>
+		</thead>
+		<tbody>
+    {% for post in posts %}
+    <tr>
+        <td>{{ post.rank }}</td>
+        <td>{{ post.disease }}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.status }}</td>
+        <td>{{ post.conditions }}</td>
+        <td>{{ post.intervention }}</td>
+        <td>{{ post.locations }}</td>
+    </tr>
+    {% endfor %}
+		</tbody>
+	</table>
+</div>
+  
+  
+</body>
+</html>

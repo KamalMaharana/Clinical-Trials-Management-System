@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Search Result</title>
+  
+  
+  
+      <link rel="stylesheet" href="../static/css/Datatable.css">
+
+  
+</head>
+
+<body>
+    <form id="search-form_3">
+        <input type="text" class="search_3" name="query" id="query">
+        <input type="submit" class="submit_3" value="Search" >
+    </form>
+  <div class="container">
+	<table>
+		<thead>
+			<tr>
+				<th>Rank</th>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Conditions</th>
+                <th>Interventions</th>
+                <th>Locations</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+        <td>1</td>
+        <td>Phase 1 Study of Niraparib in Combination With Osimertinib in EGFR-Mutated Advanced Lung Cancer</td>
+        <td>Not yet recruiting</td>
+        <td>Lung Cancer</td>
+        <td>Drug: Niraparib|Drug: Osimertinib</td>
+        <td>Dana Farber Cancer Institute
+         Boston</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Trail of Tumor Vaccine Used for Adjuvant Therapy in Post Radical Operation Patients With Lung Cancer</td>
+        <td>Not yet recruiting</td>
+        <td>Lung Cancer</td>
+        <td>Biological: Tumor Vaccine</td>
+        <td>Hunan Provincal Tumor Hospital
+        Changsha</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>PET/CT Based Radiomics for Lung Cancer (PERL)</td>
+        <td>Recruiting</td>
+        <td>Lung Cancer</td>
+        <td>Other: No Interventions</td>
+        <td>Second Affiliated Hospital of Wenzhou Medical University
+         Wenzhou</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Stepped Palliative Care Versus Early Integrated Palliative Care in Patients With Advanced Lung Cancer</td>
+        <td>Recruiting</td>
+        <td>Lung Cancer</td>
+        <td>Other: Stepped PC|Other: Early Integrated PC</td>
+        <td>Massachusetts General Hospital
+        Boston</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Lung Cancer Vaccine Plus Oral Dietary Supplement</td>
+        <td>Completed</td>
+        <td>Lung Cancer</td>
+        <td>Biological: vaccine 1650-G</td>
+        <td>University of Kentucky
+        Lexington</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Study of Stepped Palliative Care in Patients With Advanced Lung Cancer DF/HCC SOCIAL-BEHAVIORAL RESERACH PROTOCOL</td>
+        <td>Terminated</td>
+        <td>Lung Cancer</td>
+        <td>Other: Stepped Palliative Care</td>
+        <td>Massachusetts General Hospital
+        Boston</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Treatment Patterns in Advanced Small Cell Lung Cancer (SCLC)</td>
+        <td>Active</td>
+        <td>No Results Available</td>
+        <td>Lung Cancer</td>
+        <td>Other: Non-interventional
+        Local Institution</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>Multiparametric Image Analysis and Correlation With Outcomes in Lung Cancer Screening and Early Stage Lung Cancer</td>
+        <td>Active</td>
+        <td>No Results Available</td>
+        <td>Lung Cancer</td>
+        <td>Other: Retrospective Study
+        UT Southwestern Medical Centre</td>
+    </tr>
+    <tr>
+        <td>9</td>
+        <td>Early Integrated Telehealth Versus In-Person Palliative Care for Patients With Lung Cancer</td>
+        <td>Recruiting</td>
+        <td>Lung Cancer</td>
+        <td>Other: Telehealth|Other: In-person PC</td>
+        <td>University of Alabama at Birmingham
+        Birmingham</td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>Safety and Efficiency of γδ T Cell Against Lung Cancer</td>
+        <td>Recruiting</td>
+        <td>Lung Cancer</td>
+        <td>Procedure: Cryosurgery or IRE surgery|Biological: γδ T cell|Other: γδ T cells/ A Cryosurgery or IRE
+        <td>Biotherapy center in Fuda cancer hospital
+         Guangzhou</td>
+    </tr>
+    {% for post in posts %}
+    <tr>
+        <td>{{ post.rank }}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.status }}</td>
+        <td>{{ post.condition }}</td>
+        <td>{{ post.intervention }}</td>
+        <td>{{ post.location }}</td>
+    </tr>
+    {% endfor %}
+		</tbody>
+	</table>
+</div>
+  
+  
+</body>
+</html>

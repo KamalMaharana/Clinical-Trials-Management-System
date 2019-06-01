@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Login Form
+        </title>
+        <link rel="stylesheet" type="text/css" href="../static/css/Log.css">
+        <body>
+            <div class="loginbox">
+                <img src="../static/images/user_avatar_profile_login_button_account_member-512.png" class="avatar">
+                <h1>Login Here</h1>
+                <form method="POST" action="/userhome">
+                    <label for="inputEmail">Email ID:</label>
+                    <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+                    <label for="inputPassword">Password</label>
+                    <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required autofocus>
+
+                    <input type="submit" id="btnSignIn" name="" value="Login">
+                    <a href="/register">Sign-Up</a>
+                </form>
+            </div>
+        </body>
+    </head>
+</html>

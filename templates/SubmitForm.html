@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Submit Results
+    </title>
+    <link rel="stylesheet" type="text/css" href="../static/css/SubmitForm.css">
+
+</head>
+    <body>
+        <div class="loginbox">
+            <h1>Submit Results</h1>
+            <form method="POST" action="">
+                <label for="inputDisease">Disease</label>
+                <input type="text" name="inputDisease" id="inputDisease" class="form-control" placeholder="Enter Disease name:" required autofocus>
+                <label for="inputTitle">Title</label>
+                <input type="text" name="inputTitle" id="inputTitle" class="form-control" placeholder="Enter Title:" required autofocus>
+                <label for="inputStatus">Status</label>
+                <input type="text" name="inputStatus" id="inputStatus" class="form-control" placeholder="Enter Status:" required autofocus>
+                <label for="inputCondition">Condition</label>
+                <input type="text" name="inputCondition" id="inputCondition" class="form-control" placeholder="Enter Condition:" required autofocus>
+                <label for="inputIntervention">Intervention</label>
+                <input type="text" name="inputIntervention" id="inputIntervention" class="form-control" placeholder="Enter Intervention:" required autofocus>
+                <label for="inputLocation">Location</label>
+                <input type="text" name="inputLocation" id="inputLocation" class="form-control" placeholder="Enter Location:" required autofocus>
+                <input type="submit" name="" id="btnSignUp" value="Submit" onclick="popup()">
+            </form>
+        </div>
+        <script src="../static/js/jquery-3.3.1.min.js"></script>
+        <script src="../static/js/signUp.js"></script>
+        <script>
+            function popup() {
+                alert("Results Submit");
+            }
+        </script>
+    </body>
+</html>
