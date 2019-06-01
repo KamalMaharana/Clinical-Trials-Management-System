@@ -11,4 +11,9 @@ For Database I used MySQL and Wampserver.
 2. Create database named "clinical".
 3. Create the following table with following column names
     A) user
-       Column: 
+       Column: f-name, l-name, email, password.
+After installation and setting up the database.
+In Python console:
+1. import * from app
+2. db.create_all()
+3. On Terminal: python app.py
