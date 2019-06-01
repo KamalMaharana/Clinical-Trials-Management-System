@@ -6,7 +6,7 @@ To run the code install the following packages(Prefer Pycharm to run this progra
 3. Install mysqldb.
 4. Install werkzeug.
 5. Install SQLAlchemy.
-For Database I used MySQL from Wampserver.
+For Database I used MySQL and Wampserver.
 1. Install Wampserver.
 2. Create database named "clinical".
 3. Create the following table with following column names
